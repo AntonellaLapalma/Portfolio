@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITULO -->
+    <title>Antonella Lapalma | Portfolio</title>
+    <!-- ICON -->
+    <link rel="icon" href="assets/img/favicon-16x16.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c46814ff6f.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- BARRA DE NAVEGACION -->
+        <nav>
+            <section id="info-nav">
+                <p id="nombre-nav">Antonella Lapalma</p>
+                <p id="esp-nav">Software Developer</p>
+            </section>
+            <i class="fa-solid fa-bars menu" id="menu"></i>
+            <ul id="lista-menu">
+                <li><a href="#inicio" class="nav-item">Inicio</a></li>
+                <li><a href="#sobremi" class="nav-item">Sobre mi</a></li>
+                <li><a href="#misproyectos" class="nav-item">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="scroller">
+        <!-- PRIMERA SECCION -->
+        <div id="inicio" class="box-secciones secciones">
+            <section>
+                <!-- PRESENTACION -->
+                <h2 class="texto-borde">Hola! Soy</h2>
+                <h2 id="nombre-inicio">Antonella Lapalma,</h2>
+                <h2 class="texto-borde">Software Developer.</h2>
+                <div id="links">
+                    <a href="assets/pdf/Antonella Lapalma cv 2024.pdf" class="btn btn-inicio" download>
+                        <div class="div-btn">
+                            <section class="section-btn">
+                                <i class="fa-solid fa-download descarga"></i>
+                                <span class="texto-btn">Descargar cv</span>
+                            </section>
+                        </div>
+                    </a>
+                    <a href="mailto:antonellalapalma97@gmail.com" class="btn btn-inicio" target="_blank">
+                        <div class="div-btn">
+                            <section class="section-btn">
+                                <i class="fa-regular fa-envelope correo"></i>
+                                <span class="texto-btn">Contactar</span>
+                            </section>
+                        </div>
+                    </a>
+                    <a href="https://github.com/AntonellaLapalma" class="btn btn-inicio" target="_blank">
+                        <div class="div-btn">
+                            <section class="section-btn">
+                                <i class="fa-brands fa-github git"></i>
+                                <span class="texto-btn">Ir a GitHub</span>
+                            </section>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <!-- IMAGEN -->
+                <div id="div-foto"><img src="assets/img/mi-foto.jpg" id="mi-foto"></div>
+            </section>
+            <!-- <div id="circulo1" class="circulo"></div>
+            <div id="circulo2" class="circulo"></div>
+            <div id="circulo3" class="circulo"></div>
+            <div id="rectangulo1" class="rectangulo"></div>
+            <div id="rectangulo2" class="rectangulo"></div>
+            <div id="rectangulo3" class="rectangulo"></div> -->
+        </div>
+        <!-- SEGUNDA SECCION -->
+        <div id="sobremi" class="secciones">
+            <div id="sobremi-content" class="box-secciones">
+                <section id="box-sobremi">
+                    <!-- PRESENTACION -->
+                    <h4 class="titulo-sobremi" id="titulo-sobremi">SOBRE MI</h4>
+                    <p id="presentacion">Tengo 26 años, y me apasiona la tecnología en general, el uso de herramientas informáticas y el diseño y programación de software. Recientemente, finalicé una <span>tecnicatura superior en desarrollo de software</span>. Además durante mi formación, busqué ampliar mis habilidades participando en cursos especializados. Completé con éxito un curso dedicado al <span>Desarrollo Frontend</span> y otro en <span>Full Stack Python</span>.<br>
+                    Actualmente, me encuentro cursando la <span>Licenciatura en Desarrollo y Producción de Videojuegos</span>, donde continúo expandiendo mis conocimientos y explorando mi pasión por la creación de experiencias interactivas.</p>
+                    <!-- LENGUAJES -->
+                    <section id="box-etiquetas">
+                        <div class="tarjeta"><img src="assets/img/html.svg" id="logo-html"><span>#HTML5</span></div>
+                        <div class="tarjeta"><img src="assets/img/css.svg" id="logo-css"><span>#CSS3</span></div>
+                        <div class="tarjeta"><img src="assets/img/javascript.svg" id="logo-js"><span>#JavaScript</span></div>
+                        <div class="tarjeta"><img src="assets/img/python.svg" id="logo-py"><span>#Python</span></div>
+                        <div class="tarjeta"><img src="assets/img/django_logo.svg" id="logo-dj"><span>#Django</span></div>
+                        <div class="tarjeta"><i class="fa-solid fa-database" id="logo-sql"></i><span>#SQL</span></div>
+                    </section>
+                    <!-- ESTUDIOS -->
+                    <div id="formacion">
+                        <section id="estudios">
+                            <h4 class="titulo-sobremi">ESTUDIOS</h4>
+                            <section class="estudios">
+                                <p class="institucion">Universidad de la Ciudad de Buenos Aires</p>
+                                <a href="https://udelaciudad.edu.ar/licenciatura-en-desarrollo-y-produccion-de-videojuegos/" class="titulo">Licenciatura en Desarrollo y Producción de Videojuegos</a>
+                                <p class="estado">En curso</p>
+                            </section>
+                            <section class="estudios">
+                                <p class="institucion">Instituto de Formacion Tecnica 18</p>
+                                <a href="https://www.ifts18.edu.ar/carreras/desarrollo-de-software" class="titulo">Tecnicatura Superior en Desarrollo de Software</a>
+                                <p class="estado">Finalizado</p>
+                            </section>
+                        </section>
+                        <section id="cursos">
+                            <h4 class="titulo-sobremi">CURSOS</h4>
+                            <section class="estudios">
+                                <p class="institucion">Codo a Codo 4.0</p>
+                                <a href="https://inscripcionesagencia.bue.edu.ar/codoacodo/courses" class="titulo">Full Stack Python Developer</a>
+                                <p class="estado">Finalizado</p>
+                            </section>
+                            <section class="estudios">
+                                <p class="institucion">BA Multiplica 2.0 - UTN</p>
+                                <a href="https://buenosaires.gob.ar/desarrolloeconomico/bajoven/ba-multiplica" class="titulo">Front End Developer</a>
+                                <p class="estado">Finalizado</p>
+                            </section>
+                        </section>
+                    </div>
+                    
+                </section>
+            </div>
+            <!-- <div id="circulo4" class="circulo"></div>
+            <div id="circulo5" class="circulo"></div>
+            <div id="rectangulo4" class="rectangulo"></div>
+            <div id="rectangulo5" class="rectangulo"></div> -->
+        </div>
+        <!-- TERCER SECCION -->
+        <div id="misproyectos" class="secciones">
+            <!-- PROYECTOS -->
+            <div id="box-proyectos" class="box-secciones">
+                <!-- <div>
+                    <h4 class="titulo-sobremi">PROYECTOS</h4>
+                </div> -->
+                <div  id="proyectos">
+                    <section class="proyecto">
+                        <div class="contenido-proyecto" id="proyecto1">
+                            <div class="datos-proyecto">
+                                <div class="fondo-datos">
+                                    <h5>ESCOLARES WEB</h5>
+                                    <section>
+                                        <p>Aplicacion web administrativa para servicios de transporte escoalar.</p>
+                                        <a href="https://github.com/AntonellaLapalma/Escolares.web" class="btn" target="_blank">Ver código</a>
+                                    </section>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section class="proyecto">
+                        <div class="contenido-proyecto" id="proyecto2">
+                            <div class="datos-proyecto">
+                                <div class="fondo-datos">
+                                    <h5>ABM - KIOSCO</h5>
+                                    <section>
+                                        <p>Aplicacion para llevar un control sobre productos, facturación, proveedores y clientes.</p>
+                                        <a href="https://github.com/AntonellaLapalma/Final-2do-Cuatrimestre-POO" class="btn" target="_blank"><span>Ver código</span></a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="proyecto">
+                        <div class="contenido-proyecto" id="proyecto3">
+                            <div class="datos-proyecto">
+                                <div class="fondo-datos">
+                                    <h5>TIENDA VIRTUAL</h5>
+                                    <section>
+                                        <p>Tienda virtual para productos de computación.</p>
+                                        <a href="https://github.com/AntonellaLapalma/proyecto-final-backend" class="btn" target="_blank">Ver código</a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- <div id="circulo6" class="circulo"></div>
+            <div id="circulo7" class="circulo"></div>
+            <div id="circulo8" class="circulo"></div>
+            <div id="rectangulo6" class="rectangulo"></div>
+            <div id="rectangulo7" class="rectangulo"></div> -->
+            <!-- FOOTER -->
+            <footer>
+                <p>Designed and developed by <span>Antonella Lapalma</span></p>
+            </footer>
+        </div>
+    </main>
+    <!-- JS -->
+    <script src="assets/js/animaciones.js"></script>
+</body>
+</html>
