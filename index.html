@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="es">
+    <!-- INFO PAGINA -->
+    <title>Antonella Lapalma | Portfolio</title>
+    <meta name="description" content="Desarrolladora de Software y Estudiante de Desarrollo de Videojuegos. Especializada en tecnologías FullStack.">
+    <meta name="keywords" content="Software, Developer, IT, Videojuegos, FullStack, Antonella, Lapalma">
+    <meta name="author" content="Antonella Lapalma">
+    <link rel="icon" href="assets/img/favicon-16x16.png" type="image/x-icon">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/c46814ff6f.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body class="columna">
+    <!-- ENCABRZADO -->
+    <header id="header" class="columna ancho-v">
+        <header-content></header-content>
+    </header>
+    <div id="app" class="columna ancho-v">
+        <!-- BARRA DE NAVEGACION -->
+        <nav id="nav" class="fila">
+            <nav-bar :selected-tab="selectedTab" @tab-selected="selectTab"></nav-bar>
+        </nav>
+        <!-- CONTENIDO -->
+        <main class="content">
+            <component :is="selectedTabComponent"></component>
+        </main>
+    </div>
+    <!-- JS -->
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/copiar_texto.js"></script>
+</body>
+</html>
