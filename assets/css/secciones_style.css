@@ -1,0 +1,288 @@
+/* TODAS LAS SECCIONES */
+.marco{
+    padding: 10px 20px;
+    color: var(--color_negro);
+    background-color: var(--color_resaltado);
+    border: 1px solid var(--color_negro);
+    border-radius: 5px 5px 0px 0px;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.i-marco{
+    padding-top: 3px;
+    font-size: 12px;
+}
+.titulo-marco{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 5px;
+}
+.contenido{
+    padding: 50px;
+    height: 380px;
+    color: var(--color_blanco_2);
+    background-color: var(--color_negro_translucido);
+    backdrop-filter: blur(2px);
+    overflow-x: hidden;
+    overflow-y:scroll;
+    font-size: 16px;
+    line-height: 18px;
+    border: 1px solid var(--color_gris_2);
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.contenido::-webkit-scrollbar {
+    width: 2px;
+}
+.contenido::-webkit-scrollbar-thumb {
+    background-color: var(--color_gris_1);
+    border-radius: 6px;
+  }
+.titulo{
+    padding-bottom: 30px;
+    color: var(--color_gris_2);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.titulo2{
+    padding-bottom: 30px;
+    color: var(--color_resaltado);
+    font-size: 20px;
+}
+.contenido p span{
+    color: var(--color_resaltado);
+}
+/* SOBRE MI */
+/* HABILIDADES */
+#habilidades{
+    justify-content: start;
+    align-items: start;
+    gap: 40px 85px;
+    flex-wrap: wrap;
+}
+#habilidades article{
+    width: 27%;
+}
+.listas{
+    gap: 10px;
+}
+.lista-habilidades{
+    width: 45%;
+    justify-content: space-between;
+    align-content: center;
+    gap: 0px;   
+}
+.barras-habilidades{
+    width: 52%;
+    justify-content: space-between;
+    align-content: center;
+    gap: 18px;   
+}
+.barras-habilidades li{
+    height: 20px;
+    align-items: center;
+}
+.bloque-a, .bloque-b{
+    width: 40px;
+    height: 12px;
+    border: 1px solid var(--color_negro);
+}   
+.bloque-a{
+    background-color: var(--color_resaltado);
+}
+.bloque-b{
+    background-color: var(--color_gris_2);
+}
+/* ESTUDIOS */
+#estudios{
+    gap: 100px;
+    line-height: 22px;
+}
+#estudios section article{
+    margin-bottom: 30px;
+}
+.estudio-instituto{
+    font-size: 18px;
+}
+.link-estudio{
+    font-size: 22px;
+    color: var(--color_resaltado);
+}
+.estado{
+    color: var(--color_gris_1);
+    font-size: 16px;
+}
+/* PROYECTOS */
+#proyectos{
+    gap: 30px;
+}
+.desplazamiento{
+    overflow: auto;
+    height: 330px;
+}
+.desplazamiento::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+.desplazamiento::-webkit-scrollbar-thumb {
+    background-color: var(--color_gris_1);
+    border-radius: 6px;
+}
+#box-img{
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color_blanco_2);
+}
+#proyectos img{
+    width: 300px;
+    height: 300px;
+    border-radius: 2px;
+}
+#proyectos h3{
+    color: var(--color_resaltado);
+    font-size: 18px;
+}
+.margen-proyectos{
+    margin-bottom: 15px;
+}
+#nav-proyectos{
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+}
+#box-circulos{
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--color_gris_2);
+}
+.circulo{
+    margin: 0px 5px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color_gris_2);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.1s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+.circulo:hover{
+    background-color: var(--color_gris_1);
+}
+/* ACTIVE */
+.active2{
+    background-color: var(--color_blanco);
+}
+.active2:hover{
+    background-color: var(--color_blanco);
+}
+.active2:active{
+    background-color: var(--color_blanco_active);
+}
+
+/* CONTACTO */
+#nombre-contacto{
+    justify-content: space-between;
+}
+#nombre-contacto article{
+    width: 49%;
+    justify-content: space-between;
+}
+.box-label{
+    position: relative;
+}
+input,textarea{
+    margin: 0px 0px 30px;
+    padding: 10px;
+    color: var(--color_gris_2);
+    background-color: #11111100;
+    caret-color: var(--color_blanco_2);
+    font-size: 16px;
+    border: 1px solid var(--color_gris_2);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5) inset;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5) inset;
+    transition: 0.1s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+textarea{
+    resize: none;
+    height: 105px;
+}
+textarea::-webkit-scrollbar {
+    width: 2px;
+}
+textarea::-webkit-scrollbar-thumb {
+    background-color: var(--color_gris_2);
+    border-radius: 6px;
+  }
+  
+input:hover, textarea:hover{
+    color: var(--color_gris_1);
+    border-color: var(--color_gris_1);
+}
+input:hover + label,textarea:hover + label{
+    color: var(--color_gris_1);
+}
+input:focus, textarea:focus{
+    color: var(--color_blanco_2);
+    border-color: var(--color_resaltado);
+}
+input:focus + label, textarea:focus + label{
+    color: var(--color_resaltado);
+}
+.box-label input:-webkit-autofill,
+.box-label input:-webkit-autofill:hover, 
+.box-label input:-webkit-autofill:focus{
+    -webkit-box-shadow: 0 0 0px 1000px var(--color_blanco_2) inset;
+    transition: 0.3s ease;
+}
+.box-label input:-webkit-autofill{
+    -webkit-text-fill-color: var(--color_negro);
+    transition: 0.3s ease;
+}
+.box-label input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--color_negro);
+    transition: 0.3s ease;
+}
+input:not(:placeholder-shown) + label,
+input:focus + label{
+    top: -12px;
+    left: 5px;
+    font-size: 16px;
+    opacity: 1;
+}
+textarea:not(:placeholder-shown) + #label-area,
+textarea:focus + #label-area{
+    top: -12px;
+    left: 5px;
+    font-size: 16px;
+    opacity: 1;
+}
+#label-area{
+    top: 18px;
+}
+label{
+    position: absolute;
+    left: 10px;
+    top: 28%;
+    font-size: 18px;
+    color: var(--color_gris_2);
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.1s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+button{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--color_resaltado);
+    border: 1px solid var(--color_negro);
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:active{
+    background-color: var(--color_resaltado_hover);
+}

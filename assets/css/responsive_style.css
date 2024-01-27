@@ -1,0 +1,147 @@
+@media screen and (min-width: 1099px){
+    body{
+        padding: 0px;
+        height: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1099px){
+    .ancho-v{
+        max-width: 800px;
+        min-width: 800px;
+    }
+    #header-content{
+        flex-direction: column;
+    }
+    #img-box{
+        width: 100px;
+        height: 100px;
+    }
+    #descarga{
+        margin-top: 20px;
+    }
+    #secciones{
+        flex-wrap: wrap;
+    }
+    #habilidades article{
+        width: 40%;
+    }
+    #estudios{
+        flex-direction: column;
+        gap: 50px;
+    }
+    #box-img{
+        width: 250px;
+        height: 250px;
+    }
+    #proyectos img{
+        width: 250px;
+        height: 250px;
+    }
+    .no-desplazar{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 899px){
+    .ancho-v{
+        max-width: 600px;
+        min-width: 600px;
+    }
+    #habilidades article{
+        width: 60%;
+    }
+    #box-img{
+        width: 150px;
+        height: 150px;
+    }
+    #proyectos img{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 650px){
+    .ancho-v{
+        max-width: 400px;
+        min-width: 400px;
+    }
+    #info{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #datos-personales{
+        font-size: 14px;
+    }
+    #img-box{
+        width: 200px;
+        height: 200px;
+    }
+    #descarga{
+        margin-top: 20px;
+    }
+    #nav-bar{
+        flex-wrap: wrap;
+    }
+    #secciones{
+        flex-wrap: nowrap;
+    }
+    #habilidades article{
+        width: 100%;
+    }
+    #estudios{
+        flex-direction: column;
+        gap: 50px;
+    }
+    #proyectos{
+        flex-direction: column;
+    }
+    #box-img{
+        width: 150px;
+        height: 150px;
+    }
+    #proyectos img{
+        width: 150px;
+        height: 150px;
+    }
+    .no-desplazar{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 490px){
+    .ancho-v{
+        max-width: 350px;
+        min-width: 350px;
+    }
+    #info{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #datos-personales{
+        font-size: 14px;
+    }
+    #nombre{
+        font-size: 28px;
+    }
+    #especialidad{
+        font-size: 24px;
+    }
+    #img-box{
+        width: 200px;
+        height: 200px;
+    }
+    #descarga{
+        margin-top: 20px;
+    }
+    #nav-bar{
+        flex-wrap: wrap;
+    }
+    #secciones{
+        flex-wrap: nowrap;
+    }
+    .i-marco{
+        padding-top: 0px;
+    }
+}

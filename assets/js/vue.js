@@ -15,7 +15,7 @@ Vue.component('header-content',{
                         <span id="copyButton">{{email}}</span>
                         <i id="copyBtn" class="fa-regular fa-copy" title="Copiar email"></i>
                     </p>
-                    <a id="github" class="fila contacto" href="https://github.com/AntonellaLapalma" title="Ir a GitHub">
+                    <a id="github" class="fila contacto" href="https://github.com/AntonellaLapalma" title="Ir a GitHub" target="_blank">
                         <i id="i-github" class="fa-brands fa-github"></i>
                         <span>{{github}}</span>
                         <i id="redirect" class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -23,11 +23,16 @@ Vue.component('header-content',{
                 </article>
             </section>
             <section id="descarga">
-                <a id="cv" class="btn-p fila" href="assets/pdf/Antonella Lapalma - CV.pdf">
-                    <i id="i-cv" class="fa-solid fa-download"></i>
-                    <span>Descargar CV</span>
+                <a id="cv" class="btn-p fila" href="assets/pdf/Antonella Lapalma - CV.pdf"  @mouseover="playHoverSound" @mousedown="playClickSound" target="_blank">
+                    <i id="i-cv" class="fa-solid fa-download"></i>Descargar CV
                 </a>
             </section>
+            <audio ref="sonidoHover">
+                <source src="assets/sound/untitled.mp3" type="audio/mp3">
+            </audio>
+            <audio ref="sonidoClick">
+                <source src="assets/sound/sonido_seleccionar_opcion_2.mp3" type="audio/mp3">
+            </audio>
         </div>
     `,
     data(){
@@ -37,7 +42,27 @@ Vue.component('header-content',{
             email:"antonellalapalma97@gmail.com",
             github:"/antonellalapalma",
         }
-    }
+    },
+    methods: {
+        playHoverSound(event) {
+            event.stopPropagation();
+            const audioElement = this.$refs.sonidoHover;
+            audioElement.currentTime = 0;
+            audioElement.play();
+        },
+        playClickSound(event) {
+            event.stopPropagation();
+            const clickElement = this.$refs.sonidoClick;
+            clickElement.currentTime = 0;
+            clickElement.play();
+        },
+    },
+    updated() {
+        if (this.$refs.sonidoHover) {
+            this.$refs.sonidoHover.volume = 0.5;
+            this.$refs.sonidoClick.volume = 0.5;
+        }
+    },
 })
 {/* <a id="github" class="fila contacto" href="https://www.linkedin.com/in/antonella-lapalma/" title="Ir a GitHub">
                         <i id="i-github"  class="fa-brands fa-linkedin"></i>
@@ -51,17 +76,23 @@ Vue.component('nav-bar',{
     `
     <div id="nav-bar" class="fila">
         <ul id="secciones" class="fila">
-            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === a }" @click="selectSection(a)">{{ a }}</li>
-            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === b }" @click="selectSection(b)">{{ b }}</li>
+            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === a }" @click="selectSection(a)" @mouseover="playHoverSound" @mousedown="playClickSound">{{ a }}</li>
+            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === b }" @click="selectSection(b)" @mouseover="playHoverSound" @mousedown="playClickSound">{{ b }}</li>
         </ul>
         <ul id="secciones" class="fila">
-            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === c }" @click="selectSection(c)">{{ c }}</li>
-            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === d }" @click="selectSection(d)">{{ d }}</li>
+            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === c }" @click="selectSection(c)" @mouseover="playHoverSound" @mousedown="playClickSound">{{ c }}</li>
+            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === d }" @click="selectSection(d)" @mouseover="playHoverSound" @mousedown="playClickSound">{{ d }}</li>
         </ul>
         <ul id="secciones" class="fila">
-            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === e }" @click="selectSection(e)">{{ e }}</li>
-            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === f }" @click="selectSection(f)">{{ f }}</li>
+            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === e }" @click="selectSection(e)" @mouseover="playHoverSound" @mousedown="playClickSound">{{ e }}</li>
+            <li :class="{ 'item-secciones': true, 'fila': true, 'active': selectedTab === f }" @click="selectSection(f)" @mouseover="playHoverSound" @mousedown="playClickSound">{{ f }}</li>
         </ul>
+        <audio ref="sonidoHover">
+            <source src="assets/sound/untitled.mp3" type="audio/mp3">
+        </audio>
+        <audio ref="sonidoClick">
+            <source src="assets/sound/sonido_seleccionar_opcion_2.mp3" type="audio/mp3">
+        </audio>
     </div>
     `,
     data(){
@@ -79,6 +110,22 @@ Vue.component('nav-bar',{
             console.log('Valor de selectedTab al hacer clic:', this.selectedTab);
             this.$emit('tab-selected', section);
         },
+        playHoverSound() {
+            const audioElement = this.$refs.sonidoHover;
+            audioElement.currentTime = 0;
+            audioElement.play();
+        },
+        playClickSound() {
+            const clickElement = this.$refs.sonidoClick;
+            clickElement.currentTime = 0;
+            clickElement.play();
+        },
+    },
+    updated() {
+        if (this.$refs.sonidoHover) {
+            this.$refs.sonidoHover.volume = 0.5;
+            this.$refs.sonidoClick.volume = 0.5;
+        }
     },
 });
 Vue.component('nav-proyectos', {
@@ -86,10 +133,16 @@ Vue.component('nav-proyectos', {
     template: `
       <div id="nav-proyectos" class="fila">
         <ul id="box-circulos" class="fila">
-            <li :class="{ 'circulo': true, 'active2': selectedTab2 === z }" @click="selectSection2(z)"></li>
-            <li :class="{ 'circulo': true, 'active2': selectedTab2 === x }" @click="selectSection2(x)"></li>
-            <li :class="{ 'circulo': true, 'active2': selectedTab2 === y }" @click="selectSection2(y)"></li>
+            <li :class="{ 'circulo': true, 'active2': selectedTab2 === z }" @click="selectSection2(z)" @mouseover="playHoverSound" @mousedown="playClickSound"></li>
+            <li :class="{ 'circulo': true, 'active2': selectedTab2 === x }" @click="selectSection2(x)" @mouseover="playHoverSound" @mousedown="playClickSound"></li>
+            <li :class="{ 'circulo': true, 'active2': selectedTab2 === y }" @click="selectSection2(y)" @mouseover="playHoverSound" @mousedown="playClickSound"></li>
         </ul>
+        <audio ref="sonidoHover">
+            <source src="assets/sound/untitled.mp3" type="audio/mp3">
+        </audio>
+        <audio ref="sonidoClick">
+            <source src="assets/sound/sonido_seleccionar_opcion_2.mp3" type="audio/mp3">
+        </audio>
       </div>
     `,
     data(){
@@ -104,6 +157,24 @@ Vue.component('nav-proyectos', {
             console.log('Valor de selectedTab 2 al hacer clic:', this.selectedTab2);
             this.$emit('tab-selected2', section);
         },
+        playHoverSound(event) {
+            event.stopPropagation();
+            const audioElement = this.$refs.sonidoHover;
+            audioElement.currentTime = 0;
+            audioElement.play();
+        },
+        playClickSound(event) {
+            event.stopPropagation();
+            const clickElement = this.$refs.sonidoClick;
+            clickElement.currentTime = 0;
+            clickElement.play();
+        },
+    },
+    updated() {
+        if (this.$refs.sonidoHover) {
+            this.$refs.sonidoHover.volume = 0.5;
+            this.$refs.sonidoClick.volume = 0.5;
+        }
     },
 });
 // SECCIONES
