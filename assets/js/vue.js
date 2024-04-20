@@ -458,6 +458,7 @@ Vue.component('contenido-contacto', {
                 <section>
                     <button type="submit" title="Enviar formulario">Enviar</button>
                 </section>
+                <input type="hidden" name="_next" value="https://antonellalapalma.github.io/Portfolio/">
             </form>
         </section>
     </div>
