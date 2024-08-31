@@ -448,11 +448,11 @@ Vue.component('contenido-contacto', {
                     </article>
                 </section>
                 <section class="columna box-label">
-                    <input type="email" placeholder=" " required name="Emal" title="Ingrese su email">
+                    <input type="email" placeholder=" " required name="Email" title="Ingrese su email">
                     <label for="">Email</label>
                 </section>
                 <section class="columna box-label">
-                    <textarea name="" id="" cols="30" rows="10" placeholder=" " required name="Mensaje"  title="Escriba un mensaje"></textarea>
+                    <textarea id="" cols="30" rows="10" placeholder=" " required name="Mensaje" title="Escriba un mensaje"></textarea>
                     <label for="" id="label-area">Mensaje</label>
                 </section>
                 <section>
