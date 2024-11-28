@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Abel';
+    src: url('/assets/fonts/Abel-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('/assets/fonts/Anton-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 *{
     margin: 0%;
     padding: 0%;
