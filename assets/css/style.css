@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Abel';
-    src: url('assets/fonts/Abel-Regular.ttf') format('truetype');
+    src: url('Portfolio/assets/fonts/Abel-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Anton';
-    src: url('assets/fonts/Anton-Regular.ttf') format('truetype');
+    src: url('Portfolio/assets/fonts/Anton-Regular.ttf') format('truetype');
 }
 *{
     margin: 0%;
