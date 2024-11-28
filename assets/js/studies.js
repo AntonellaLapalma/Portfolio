@@ -6,7 +6,7 @@ const EducationComponent = {
                 <a :href= "estudios[3].link" target="_blank">
                     <ul>
                         <li class="p-instituto">{{ estudios[0].institucion }}</li>
-                        <li class="p-titulo">{{ estudios[1].titulo }}<img class="link" src="assets/svg/link.svg" alt="icono-link"></li>
+                        <li class="p-titulo">{{ estudios[1].titulo }}<img class="link" src="assets/svg/link.svg" alt="icono-link" width="10"></li>
                         <li class="p-estado">{{ estudios[2].estado }}</li>
                     </ul>
                 </a>
@@ -18,7 +18,7 @@ const EducationComponent = {
                 <a :href= "curso[3].link" target="_blank" >
                     <ul>
                         <li class="p-instituto">{{ curso[0].institucion }}</li>
-                        <li class="p-titulo">{{ curso[1].tipo }}<img class="link" src="assets/svg/link.svg" alt="icono-link"></li>
+                        <li class="p-titulo">{{ curso[1].tipo }}<img class="link" src="assets/svg/link.svg" alt="icono-link" width="10"></li>
                         <li class="p-estado">{{ curso[2].estado }}</li>
                     </ul>
                 </a>
