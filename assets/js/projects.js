@@ -3,7 +3,7 @@ const ProjectsComponent = {
     <h3>Proyectos</h3> 
     <div>
         <div class="box-project" v-for="project in projects">
-            <img :src="project[0].img" class="img-project" />
+            <img :src="project[0].img" class="img-project" alt="logo-proyecto"/>
             <article v-for="p in project">
                 <h4><a href="">{{ p.nombre }}<img class="link" src="assets/svg/link.svg" alt="icono-link"></a></h4>
                 <h5>{{ p.procedencia }}</h5>

@@ -5,7 +5,7 @@ const SkillsComponent = {
         <div class="skill" v-for="skill in skills" :key="skill.nombre">
             <div class="circle" :style="{ '--level': skill.lvl + '%', '--progress-color': skill.color }">
                 <div class="circle-image-box">
-                    <img :src="'assets/svg/' + skill.nombre.toLowerCase().replace('#', 'sharp') + '.svg'" alt="Icono" class="circle-image" />
+                    <img :src="'assets/svg/' + skill.nombre.toLowerCase().replace('#', 'sharp') + '.svg'" alt="Icono-' + skill.nombre" class="circle-image" />
                 </div>
             </div>
             <div class="skill-name">{{ skill.nombre }}</div>
