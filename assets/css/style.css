@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+/* :root{
+    --color_1:#FFA800;
+    --color_2:#C78300;
+    --color_3:#F4F4F4;
+    --color_4:#cfcfcf;
+    --color_5:#dadada;
+    --color_6:#595959;
+    --color_7:#363636;
+    --color_8:#1D1D1D;
+    --color_9:#252525;
+} */
+/* PAGINA */
+html{
+    width: 100vw;
+    height: 100vh;
+}
+#app{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+#app::-webkit-scrollbar{
+    width: 2px;
+    height: 2px;
+}
+#app::-webkit-scrollbar-thumb{
+    background-color: #595959;
+    border-radius: 6px;
+}
+/* ESTILOS GENERALES */
+::selection{
+    background-color: rgb(211, 211, 211);
+    color: #000000;
+}
+/* SECTIONS*/
+section{
+    padding: 80px 30% 0px;
+    width: 100%;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+/* TITULOS */
+ h3{
+    width: 100%;
+    color: #131313;
+    font-family: "Anton", serif;
+    font-size: 24px;
+    text-align: start;
+    text-transform: uppercase;
+}
+@media (max-width: 1000px) {
+    section{
+        padding: 80px 20% 0px;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
+@media (max-width: 600px) {
+    section{
+        padding: 80px 10% 0px;
+    }
+    h3{
+        font-size: 20px;
+    }
+}

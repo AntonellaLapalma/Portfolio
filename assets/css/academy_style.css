@@ -1,0 +1,40 @@
+/* STUDIES */
+#studies{
+    margin: 80px 0px 60px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #131313;
+    gap: 25px;
+}
+#studies h3{
+    color: #fff;
+}
+#studies ul{
+    margin: 20px 0px;
+}
+.p-instituto{
+    color: #adadad;
+    font-size: 18px;
+}
+.p-titulo{
+    color: #fff;
+    font-size: 22px;
+}
+.p-estado{
+    color: #505050;
+    font-size: 16px;
+}
+@media (max-width: 600px) {
+    .p-instituto{
+        font-size: 14px;
+    }
+    .p-titulo{
+        font-size: 18px;
+    }
+    .p-estado{
+        font-size: 12px;
+    }
+}

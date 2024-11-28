@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="es">
+    <!-- INFO PAGINA -->
+    <title>Antonella Lapalma | Portfolio</title>
+    <meta name="description" content="Desarrolladora de Software y Estudiante de Desarrollo de Videojuegos. Especializada en tecnologías FullStack.">
+    <meta name="keywords" content="Software, Developer, IT, Videojuegos, FullStack, Antonella, Lapalma, GameDeveloper">
+    <meta name="author" content="Antonella Lapalma">
+    <link rel="icon" href="assets/img/codigo-de-mensaje.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header_style.css">
+    <link rel="stylesheet" href="assets/css/about_style.css">
+    <link rel="stylesheet" href="assets/css/academy_style.css">
+    <link rel="stylesheet" href="assets/css/projects_style.css">
+    <link rel="stylesheet" href="assets/css/footer_style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <!-- JS -->
+    <script src="assets/js/skills.js" defer></script>
+    <script src="assets/js/studies.js" defer></script>
+    <script src="assets/js/projects.js" defer></script>
+    <script src="assets/js/scrollbar.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</head>
+<body id="app">
+        <!--  -->
+        <header> 
+            <h1 id="nombre">Antonella Lapalma</h1>
+            <h2 id="especialidad">Software Developer</h2>
+        </header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#studies">Estudios</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+            </ul>
+        </nav>
+
+        <!--  -->
+        <section id="about">
+            <h3 id="titulo-about">Presentación</h3>
+            <p id="parrafo-about">¡Hola! Soy Antonella, tengo 27 años y soy Desarrolladora de Software. Actualmente estoy estudiando la Licenciatura en Desarrollo y Producción de Videojuegos, un área que combina perfectamente mi pasión por la tecnología y la creatividad. Durante mi formación, tuve la oportunidad de realizar cursos en Desarrollo Front End y Full Stack Python, lo que me ayudó a ampliar mis conocimientos y a descubrir diferentes aspectos del desarrollo.</p>
+            <p id="parrafo-about">Me encanta trabajar en proyectos donde pueda aprender cosas nuevas, colaborar con otras personas y aportar ideas que realmente marquen la diferencia. Siempre estoy buscando desafíos que me permitan crecer, tanto a nivel profesional como personal.</p>
+        </section>
+
+        <!-- JS CON LA SECION SKILLS -->
+        <section>
+            <skills></skills>
+        </section>
+
+        <!-- JS CON LA SECCION ESTUDIOS -->
+        <section  id="studies">
+            <education-courses></education-courses>
+        </section>
+
+        <!-- JS CON LA SECCION PROYECTOS -->
+        <section id="projects">
+            <projects></projects>
+        </section>
+
+        <!-- LINKS DE CONTACTO -->
+        <footer>
+            <a href="mailto:antonellalapalma97@gmail.com"><img src="assets/svg/gmail.svg" alt="icono-gmail"><span>antonellalapalma97@gmail.com</span></a>
+            <a href="https://www.linkedin.com/in/antonella-lapalma/"><img src="assets/svg/linkedin.svg" alt="icono-linkedin"><span>/antonella-lapalma</span></a>
+            <a href="https://antonellalapalma.itch.io/"><img src="assets/svg/itch.svg" alt="icono-itch"><span>antonellalapalma.itch.io</span></a>
+            <a href="https://github.com/AntonellaLapalma"><img src="assets/svg/github2.svg" alt="icono-github"><span>/AntonellaLapalma</span></a>
+        </footer>
+</body>
+</html>

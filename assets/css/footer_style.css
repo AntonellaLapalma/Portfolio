@@ -1,0 +1,30 @@
+footer{
+    padding: 10px 0px;
+    background-color: #131313c9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+footer a{
+    color: #b4b4b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+footer a:hover{
+    color: #cecece;
+}
+footer img{
+    height: 20px;
+
+}
+@media (max-width: 1000px) {
+    footer span{
+        display: none;
+    }
+}
