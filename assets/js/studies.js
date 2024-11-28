@@ -2,23 +2,27 @@ const EducationComponent = {
     template: `
         <div>
             <h3>Estudios Formales</h3>
-            <ul v-for="estudios in estudiosFormalesList">
+            <div v-for="estudios in estudiosFormalesList">
                 <a :href= "estudios[3].link" target="_blank">
-                    <li class="p-instituto">{{ estudios[0].institucion }}</li>
-                    <li class="p-titulo">{{ estudios[1].titulo }}<img class="link" src="assets/svg/link.svg" alt="icono-link"></li>
-                    <li class="p-estado">{{ estudios[2].estado }}</li>
+                    <ul>
+                        <li class="p-instituto">{{ estudios[0].institucion }}</li>
+                        <li class="p-titulo">{{ estudios[1].titulo }}<img class="link" src="assets/svg/link.svg" alt="icono-link"></li>
+                        <li class="p-estado">{{ estudios[2].estado }}</li>
+                    </ul>
                 </a>
-            </ul>
+            </div>
         </div>
         <div>
             <h3>Cursos</h3>
-            <ul v-for="curso in cursosList">
-                <a :href= "curso[3].link" target="_blank">
-                    <li class="p-instituto">{{ curso[0].institucion }}</li>
-                    <li class="p-titulo">{{ curso[1].tipo }}<img class="link" src="assets/svg/link.svg" alt="icono-link"></li>
-                    <li class="p-estado">{{ curso[2].estado }}</li>
+            <div v-for="curso in cursosList">
+                <a :href= "curso[3].link" target="_blank" >
+                    <ul>
+                        <li class="p-instituto">{{ curso[0].institucion }}</li>
+                        <li class="p-titulo">{{ curso[1].tipo }}<img class="link" src="assets/svg/link.svg" alt="icono-link"></li>
+                        <li class="p-estado">{{ curso[2].estado }}</li>
+                    </ul>
                 </a>
-            </ul>
+            </div>
         </div>
     `,
     data() {
