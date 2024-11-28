@@ -39,6 +39,7 @@
     box-sizing: border-box;
     padding: 10px;
     transition: 0.8s;
+    cursor: default;
 }
 .box-project:hover article{
     height: 100%;

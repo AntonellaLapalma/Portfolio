@@ -4,8 +4,8 @@ const ProjectsComponent = {
     <div>
         <div class="box-project" v-for="project in projects">
             <img :src="project[0].img" class="img-project" />
-            <a href=""><article v-for="p in project">
-                <h4>{{ p.nombre }}<img class="link" src="assets/svg/link.svg" alt="icono-link"></h4>
+            <article v-for="p in project">
+                <h4><a href="">{{ p.nombre }}<img class="link" src="assets/svg/link.svg" alt="icono-link"></a></h4>
                 <h5>{{ p.procedencia }}</h5>
                 <p class="descripcion">{{ p.descripcion }}</p>
                 <p class="subtitulo">Tecnologías utilizadas:</p>
@@ -14,7 +14,7 @@ const ProjectsComponent = {
                         <img :src="'assets/svg/' + t.toLowerCase().replace('#', 'sharp') + '.svg'" alt="Icono"/>
                     </li>
                 </ul>
-            </article></a>
+            </article>
         </div>
     </div>
     `,

@@ -40,7 +40,7 @@ const EducationComponent = {
             cursosList: {
                 1: [
                     {institucion: "BA Multiplica 2.0"},
-                    {tipo: "Front End Developer"},
+                    {tipo: "Frontend Developer"},
                     {estado: "Completado"},
                     {link: "https://drive.google.com/file/d/1eRNJEUwneCoournhClAdHVOZabm2xBjt/view?usp=sharing"},
                 ],
